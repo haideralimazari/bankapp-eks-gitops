@@ -123,7 +123,7 @@ Instead of the traditional Nginx Ingress, this project uses the **modern Kuberne
 Internet → AWS NLB → Envoy Gateway → HTTPRoute → bankapp Service → Pods
 ```
 
-![Gateway API Traffic Routing](screenshots/traffic_routing.png)
+![Gateway API Traffic Routing](screenshots/Terraform_plan.png)
 *`kubectl get gatewayclass,gateway,httproute -A` — GatewayClass accepted, Gateway programmed, HTTPRoutes active*
 
 **Networking highlights:**
