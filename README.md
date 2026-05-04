@@ -123,7 +123,7 @@ Instead of the traditional Nginx Ingress, this project uses the **modern Kuberne
 Internet → AWS NLB → Envoy Gateway → HTTPRoute → bankapp Service → Pods
 ```
 
-![Gateway API Traffic Routing](screenshots/Terraform_plan.png)
+![Gateway API Traffic Routing](screenshots/Traffic_Routing.png)
 *`kubectl get gatewayclass,gateway,httproute -A` — GatewayClass accepted, Gateway programmed, HTTPRoutes active*
 
 **Networking highlights:**
@@ -161,7 +161,7 @@ Full observability stack deployed inside the cluster — **Prometheus** scrapes 
 
 ### Application Workload Monitoring
 
-![Grafana Workload Dashboard](screenshots/grafana.png)
+![Grafana Workload Dashboard](screenshots/Grafana.png)
 *Grafana — Namespace (bankapp): Per-workload CPU/Memory quotas for `bankapp`, `mysql`, `ollama`, and `bankapp-tls` challenge pods*
 
 | Workload | Pods | CPU Usage | CPU Requests | Memory |
@@ -172,7 +172,7 @@ Full observability stack deployed inside the cluster — **Prometheus** scrapes 
 
 ### Node-Level Metrics (Node Exporter)
 
-![Node Exporter Dashboard](screenshots/node_exporter.png)
+![Node Exporter Dashboard](screenshots/Node_Exporter.png)
 *Node Exporter dashboard — CPU Usage near **0%** idle, Memory at **52.4%** used, Load Average stable across 1m/5m/15m*
 
 ---
